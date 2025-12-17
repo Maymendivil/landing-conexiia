@@ -335,16 +335,33 @@
         </div>
 
         <div>
-          <div
-            class="bg-white rounded-xl shadow-soft p-6 space-y-4 text-left"
-    
-          >
+  <form
+    class="bg-white rounded-xl shadow-soft p-6 space-y-4 text-left"
+    action="https://formsubmit.co/admin@conexiia.com"
+    method="POST"
+  >
+    <input type="hidden" name="_subject" value="Solicitud de llamada Conexiia" />
+    <input type="hidden" name="_captcha" value="false" />
+    <input type="hidden" name="_template" value="table" />
+
             <div>
               <label class="block text-sm font-medium text-slate-800 mb-1">Nombre completo</label>
               <input type="text" name="nombre" required
                 class="w-full rounded-lg border border-slate-200 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brandTurquoise/60 focus:border-brandTurquoise"
                 placeholder="Escribe tu nombre" />
             </div>
+    <div>
+  <label class="block text-sm font-medium text-slate-800 mb-1">
+    Teléfono / WhatsApp
+  </label>
+  <input
+    type="tel"
+    name="telefono"
+    required
+    class="w-full rounded-lg border border-slate-200 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brandTurquoise"
+    placeholder="+57 300 000 0000"
+  />
+</div>
 
             <div>
               <label class="block text-sm font-medium text-slate-800 mb-1">Correo electrónico</label>
@@ -388,9 +405,9 @@
             </button>
 
             <p class="text-xs text-slate-500 pt-2">
-              Nota: al enviar, tu navegador abrirá tu aplicación de correo con la información precargada.
+             Nota: al enviar, recibirás una confirmación y nuestro equipo te contactará pronto.
             </p>
-          </div>
+         </form>
         </div>
       </div>
     </section>
